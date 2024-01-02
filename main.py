@@ -61,3 +61,9 @@ predictions = linear.predict(x_test)
 for x in range(len(predictions)):
     print(predictions[x], x_test[x], y_test[x])
 
+p = 'G2'
+style.use("ggplot")
+pyplot.scatter(data[p], data[predict])
+pyplot.xlabel(p)
+pyplot.ylabel("Final Grade")
+pyplot.show()
